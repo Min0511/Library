@@ -2,17 +2,18 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px){
-
-
-
 /* Form start */
+
+dialog{
+  background-color: aquamarine;
+}
 
 form{
   width: 100%;
   max-width: 400px;
   min-width: 250px;
   flex-shrink: 0;
+  background-color: rgb(149, 240, 209);
 }
 
 form > fieldset:first-child{
@@ -61,15 +62,13 @@ input[type="checkBox"]{
 }
 /* Form end */
 
+@media screen and (max-width: 600px){
+
 .screen{
   display: flex;
   flex-direction: column;
   height: 98vh;
-  background-image: url("/images/paperbackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background-color: aquamarine;
 }
 
 h1{
@@ -103,13 +102,11 @@ h1{
   margin: 10px 20px 10px 20px;
   padding: 20px;
   font-size:20px;
+  border: 2px orange solid;
   border-radius: 18px;
-  border: 1px orange solid;
   background-color:black;
   color: white;
   font-weight: bold;
-  backdrop-filter: blur(1px);
-  border: 1px black solid;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -117,6 +114,7 @@ h1{
 
 .divForRead{
   display: flex;
+  margin-top:10px;
 }
 
 .divForRead > input {
@@ -143,14 +141,14 @@ h1{
   margin-left: 31px;
   width: 25px;
   height: 23px;
-  background-color: grey;
+  background-color: rgb(165, 192, 183);
   border-radius: 16px;
   position: absolute;
 }
 
 .divForRead > input:checked::after {
   margin-left: 54px;
-  background-color: blue;
+  background-color: aquamarine
 }
 
 
@@ -159,8 +157,8 @@ h1{
   margin: 10px 20px 10px 20px;
   padding: 0;
   font-size:36px;
+  border: 2px orange solid;
   border-radius: 18px;
-  border: 1px orange solid;
   height: 80px;
   font-weight: bold;
   background-color: black;
@@ -180,70 +178,11 @@ body{
   padding:0;
 }
 
-/* Form start */
-
-form{
-  width: 100%;
-  max-width: 400px;
-  min-width: 250px;
-  flex-shrink: 0;
-}
-
-form > fieldset:first-child{
-  display: flex;
-  flex-direction: column;
-}
-
-label{
-  margin-top:10px;
-  font-weight: bold;
-}
-
-input{
-  margin-bottom:10px;
-  height:32px;
-  text-align: center;
-  padding:8px;
-  font-size: 20px;
-}
-
-.readBox{
-  display:flex;
-  margin: 5px;
-  margin-top:8px;
-}
-
-input[type="checkBox"]{
-  margin-top:3px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-.buttonBox{
-  display:flex;
-  justify-content: space-around;
-}
-
-.submit, .close{
-  width: 120px;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 28px;
-  background: black;
-  color: white;
-  align-self: end;
-}
-/* Form end */
-
 .screen{
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url("/images/paperbackground.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background-color: aquamarine;
 }
 
 h1{
@@ -319,7 +258,7 @@ h1{
 
 .divForRead > input:checked::after {
   margin-left: 54px;
-  background-color: blue;
+  background-color: aquamarine;
 }
 
 .bookAdd{
@@ -327,7 +266,7 @@ h1{
   height:300px;
   font-size:24px;
   border-radius: 18px;
-  border: 1px orange solid;
+  border: 2px orange solid;
   font-weight: bold;
   background-color: black;
   color: white;
